@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.26.5/babel.min.js"></script>
+    <script
+  data-presets="typescript"
+  type="text/babel"
+  src="index.ts"
+></script>
+    <title>Flashcard Quiz App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body> 
+    <div>
+      <h1>Flash Card Quiz App</h1>
+      <div id="flashcard">
+      <div class="front"></div> <!--carta adelante-->
+      <div class="back"></div>  <!--carta atras-->
+      </div>
+    </div>
+
+    <div class="segundo">
+      <form id="entry-form">
+        <h3>Manage Cards</h3>
+        <button type="button" id="delete-btn">Delete</button>
+
+         <h3>All cards...</h3>
+        <div id="card-list"></div><!--titulo de todas las cartas-->
+       <hr/>
+       <h3>Add a New Card</h3>
+       <p>Front:</p>
+       <textarea id="front-text"></textarea>
+
+        <h3></h3>
+        <p>Back:</p>
+        <textarea id="back-text"></textarea>
+
+      <button type="submit">Save new flash card</button><!-- boton guardar titulo de todas las cartas-->
+     
+     </form>
+    </div>
+
+           <script
+      data-presets="typescript"
+      type="text/babel"
+      src="index.ts"
+    ></script>
+  </body>
+  </html>
